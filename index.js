@@ -13,7 +13,17 @@ app.listen(port,()=>{
 });
 
 app.get("/register",(req,res)=>{
-    res.send("Aca va el registro")
+    res.json({
+        Nombre1: "",
+        Nombre2: "",
+        Apellido1: "",
+        Apellido2: "",
+        Correo_electronico: "",
+        Telefono: "",
+        Fecha_nac: Date,
+        Sexo: "",
+        Ocupacion: "",
+    })
 })
 
 app.get("/login",(req,res)=>{
